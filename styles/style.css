@@ -16,6 +16,7 @@ body {
 
 div#view {
     background: linear-gradient(rgba(176, 103, 233, 1) 0%, rgba(100, 99, 231, 1)100%);
+    width: 100svw;
     height: 100svh;
     display: flex;
     justify-content: center;
@@ -23,8 +24,6 @@ div#view {
 }
 
 #component {
-    width: 920px;
-    height: 509px;
     background-color: var(--backwhite);
     border-radius: 23px;
     display: flex;
@@ -33,26 +32,14 @@ div#view {
     box-sizing: border-box;
 }
 
-#images {
-    padding: 0;
-    margin: 0;
+#image {
+    margin-right: 213px;
 }
 
-#img-relief {
-    position: relative;
-    left: 100px;
-    top: 35px;
-}
 
-#faq {
+
+.section {
     width: 350px;
-    height: 351px;
-
-}
-
-#section {
-    width: 350px;
-    height: 50px;
     border-bottom: solid 1px var(--bordergrey);
     display: flex;
     align-items: center;
@@ -61,12 +48,27 @@ div#view {
     box-sizing: border-box;
 }
 
-#section:focus {
-    background-color: #1E1F36;
+/*CLASSLISTS*/
+/*section*/
+ .section {
+    height: auto;
+ }
+
+/*answer*/
+.answer {
+    display: none;
 }
 
-.scroll {
-    visibility: initial;
+.answer.open {
+    display: initial;
+}
+
+/* .close {
+    display: none;
+} */
+
+.tobottom {
+    content: url(../images/tobottom.svg);
 }
 
 /*QUESTIONS*/
@@ -103,10 +105,7 @@ a:focus::after {
 }
 
 /*ANSWERS*/
-#a1, #a2, #a3, #a4, #a5 {
-    font-size: 14px;
-    display: none;
-}
+
 
 p.answers {
     font-size: 14px;

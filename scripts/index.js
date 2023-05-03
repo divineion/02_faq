@@ -1,21 +1,17 @@
-const q1 = document.getElementById('q1');
-const q2 = document.getElementById('q2');
-const a2 = document.getElementById('a2');
-const a1 = document.getElementById("a1");
-const question = document.getElementsByClassName("question"); //renvoie les NodeLists avec les 5 éléments
-const answers = document.getElementsByClassName("answer");
-const arrow = document.querySelector("svg");       
- 
+const sections = document.getElementsByClassName('section');
+console.log(sections);
+const reponse = document.getElementsByClassName("answer");
 
-console.log(answers);
-//je sélectionne l'ensemble des questions
-// const questions = document.querySelectorAll("questions");
-console.log(a2.style.display == "initial");
-console.log(a2.style.display == "none");
+        //LE BLOC DE CODE QUI T'INTERESSE
+for (let i=0;i<sections.length;i++) {
+                sections[i].addEventListener('click', function() {
+                        const answer = sections[i].lastElementChild;
+                        answer.classList.toggle('open');
+                })
 
-    q2.addEventListener("click", function()  {
-            a2.style.display = "initial";
-            this.parentElement.style.height = "97px"
-    });
+  };
 
 
+
+
+        
