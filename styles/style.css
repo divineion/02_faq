@@ -1,5 +1,5 @@
 :root {
-    font-size: 100%;
+    font-size: 1rem;
     --basicgrey : #4b4c5F;
     --activeblack: #1E1F36;
     --hoverpink: #F47B56;
@@ -14,6 +14,7 @@ body {
     margin: 0;
 }
 
+
 div#view {
     background: linear-gradient(rgba(176, 103, 233, 1) 0%, rgba(100, 99, 231, 1)100%);
     width: 100svw;
@@ -24,22 +25,43 @@ div#view {
 }
 
 #component {
+    width: 57.5rem;
+    height: 32.5rem;
     background-color: var(--backwhite);
     border-radius: 23px;
     display: flex;
     justify-content: space-between;
-    padding: 65px 95px 80px 0;
+    padding: 4.0625rem 5.9375rem 5rem 0;
+    margin-left: 42px;
     box-sizing: border-box;
+    position: relative;
 }
 
-#image {
-    margin-right: 213px;
+#image>img {
+    position: absolute;
+    left: -94px;
+    top: 206px;
 }
+
+#image>img:nth-last-of-type(2) {
+    width: 5.625rem;
+    top: 45px;
+
+}
+
+
+
+
+#component-right-side {
+    width: 50%;
+}
+
+
 
 
 
 .section {
-    width: 350px;
+    width: 21.875rem;
     border-bottom: solid 1px var(--bordergrey);
     display: flex;
     align-items: center;
@@ -63,9 +85,6 @@ div#view {
     display: initial;
 }
 
-/* .close {
-    display: none;
-} */
 
 .tobottom {
     content: url(../images/tobottom.svg);
@@ -77,8 +96,8 @@ a {
     width: 350px;
     text-decoration: none;
     color: var(--basicgrey);
-    font-size: 14px;
-    line-height: 17.36px;
+    font-size: 0.875rem;
+    line-height: 1.085rem;
     display: flex;
     justify-content: space-between;
 }
@@ -108,5 +127,35 @@ a:focus::after {
 
 
 p.answers {
-    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+@media screen and(max-width:375px) {
+
+    #view {
+        width: 100svw;
+        height: 100svh;
+    }
+
+    #image>img:first-of-type {
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    
+
+
+    #component {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        width: 324px    ;
+        height: auto;
+    }
+
+
+
+}
+
+@media screen and(max-width:980px) {
+    
 }

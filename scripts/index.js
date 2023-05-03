@@ -8,9 +8,7 @@ for (let i=0;i<sections.length;i++) {
                         const answer = sections[i].lastElementChild;
                         answer.classList.toggle('open');
                 })
-
   };
-
 
 
 

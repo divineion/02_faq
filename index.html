@@ -13,44 +13,47 @@
     </head>
     <body>
         <div id="view">
-            <div id="component-left-side">
-                <p>
-                    <img src="images/box.svg" alt="">
-                </p>
-            </div>
             <div id="component">
-                <p id="image"> <!-- voir appellation autre-->
-                    <img src="images/mention_isometric2.svg" width="388px" height="359px" alt="dessin d'une femme se tenant debout devant un écran géant affichant une application web">
-                </p>
-                <div id="faq">
-                    <h1>FAQ</h1> 
-                    <div class="section">
-                        <a href="#" class="question" id="q1">How many team members can I invite?</a>
-                        <p id="a1"class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a ipsum perferendis perspiciatis expedita.</p>
-                    </div>
+                <div id="component-left-side">
+                    <p id="image"> <!-- voir appellation autre-->
+                        <picture>
+                            <source srcset="images\mention_isometric-mobile.svg " media="(max-width:375px)">
+                            <img src="images/mention_isometric2.svg" width="388px" height="359px">
+                        </picture>
+                        <img src="images/box.svg" alt="">
+                    </p>
+                </div>
+                <div id="component-right-side">
+                    </p>
+                    <div id="faq">
+                        <h1>FAQ</h1> 
+                        <div class="section">
+                            <a href="#" class="question" id="q1">How many team members can I invite?</a>
+                            <p id="a1"class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a ipsum perferendis perspiciatis expedita.</p>
+                        </div>
 
-                    <div class="section">                    
-                        <a href="#" class="question" id="q2">What is the maximum file upload size?</a>
-                        <p id="a2" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                        <div class="section">                    
+                            <a href="#" class="question" id="q2">What is the maximum file upload size?</a>
+                            <p id="a2" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                        </div>
+                    
+                    <div class="section">
+                        <a href="#" class="question" id="q3">How do I reset my password?</a>
+                        <p id="a3" class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facere.</p>
                     </div>
-                
-                <div class="section">
-                    <a href="#" class="question" id="q3">How do I reset my password?</a>
-                    <p id="a3" class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facere.</p>
-                </div>
-                
-                <div class="section">
-                    <a class="question" id="q4" href="#">Can I cancel my subscription?</a>
-                    <p id="a4" class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus labore iure a?</p>
-                </div>
-                
-                <div class="section">
-                    <a href="#" class="question" id="q5">Do you provide additional support?</a>
-                    <p id="a5" class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
+                    
+                    <div class="section">
+                        <a class="question" id="q4" href="#">Can I cancel my subscription?</a>
+                        <p id="a4" class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus labore iure a?</p>
+                    </div>
+                    
+                    <div class="section">
+                        <a href="#" class="question" id="q5">Do you provide additional support?</a>
+                        <p id="a5" class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </body>
 </html>
 
