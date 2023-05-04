@@ -5,8 +5,6 @@
     --hoverpink: #F47B56;
     --backwhite: #FFFFFF;
     --bordergrey: #e8e8ea;
-
-
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -14,8 +12,7 @@ body {
     margin: 0;
 }
 
-
-div#view {
+#view {
     background: linear-gradient(rgba(176, 103, 233, 1) 0%, rgba(100, 99, 231, 1)100%);
     width: 100svw;
     height: 100svh;
@@ -93,7 +90,7 @@ div#view {
 /*QUESTIONS*/
 a {
     height: 18px;
-    width: 350px;
+    width: 21.875rem;
     text-decoration: none;
     color: var(--basicgrey);
     font-size: 0.875rem;
@@ -117,6 +114,7 @@ a:active {
 
 a::after {
     content: url(../images/tobottom.svg);
+    rotate:calc(180) ;
 }
 
 a:focus::after {
@@ -130,32 +128,3 @@ p.answers {
     font-size: 0.875rem;
 }
 
-@media screen and(max-width:375px) {
-
-    #view {
-        width: 100svw;
-        height: 100svh;
-    }
-
-    #image>img:first-of-type {
-        position: absolute;
-        left: 0;
-        top: 10px;
-    }
-    
-
-
-    #component {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        width: 324px    ;
-        height: auto;
-    }
-
-
-
-}
-
-@media screen and(max-width:980px) {
-    
-}

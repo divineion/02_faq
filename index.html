@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/style-m375.css" media="(max-width:375px)">
+        <link rel="stylesheet" href="styles/style-m960.css" media="(max-width:960px)">
         <script src="scripts/index.js" defer ></script>
     </head>
     <body>
@@ -16,11 +18,11 @@
             <div id="component">
                 <div id="component-left-side">
                     <p id="image"> <!-- voir appellation autre-->
-                        <picture>
-                            <source srcset="images\mention_isometric-mobile.svg " media="(max-width:375px)">
-                            <img src="images/mention_isometric2.svg" width="388px" height="359px">
+                        <picture id="visu">
+                            <source srcset="images\mention_isometric-mobile.svg " media="(max-width:960px)">
+                            <img id="visu" src="images/mention_isometric2.svg" width="388px" height="359px">
                         </picture>
-                        <img src="images/box.svg" alt="">
+                        <img id="box" src="images/box.svg" alt="">
                     </p>
                 </div>
                 <div id="component-right-side">

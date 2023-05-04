@@ -1,0 +1,62 @@
+#view {
+    width: 100svw;
+    height: 100svh;
+    box-sizing: border-box;
+    padding: 148px 24px 85px 1.5rem;
+}
+
+#box {
+    display: none;
+}
+
+#visu {
+    position: absolute;
+    top: -3.1rem;
+    width: 14.8125rem;
+    height: 11.25rem;
+}
+
+.section {
+    width: 100%;
+}
+
+a {
+    font-size: 0.8125rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#component {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 8.25rem 1.5rem 3rem 1.5rem;
+}
+
+#component-left-side {
+    width: 100%;
+    height: auto;
+}
+
+
+#component-right-side {
+    width: 100%;
+    padding: 0;
+}
+
+#component-right-side p {
+    width: 100%;
+    margin: 0;
+}
+
+#image {
+    margin: 0;
+}
+
+
