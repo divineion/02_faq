@@ -1,5 +1,7 @@
 #view {
     padding: 1.5rem; /*à modifier*/
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #box {
@@ -7,12 +9,16 @@
 }
 
 #image {
-    margin: 0;
     width: 100%;
+    margin: 0;
 }
 
+/*A MODIFIER POSITIONNEMENT*/
+
 #component {
-    padding: 0;
     margin: 0;
     align-items: center;
 }
+
+
+

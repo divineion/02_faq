@@ -46,32 +46,23 @@ body {
 
 }
 
-
-
-
 #component-right-side {
     width: 50%;
 }
 
-
-
-
-
 .section {
-    width: 21.875rem;
     border-bottom: solid 1px var(--bordergrey);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 16px 0 16px 0;
     box-sizing: border-box;
+    height: auto;
 }
 
 /*CLASSLISTS*/
 /*section*/
- .section {
-    height: auto;
- }
+
 
 /*answer*/
 .answer {
@@ -82,7 +73,6 @@ body {
     display: initial;
 }
 
-
 .tobottom {
     content: url(../images/tobottom.svg);
 }
@@ -90,13 +80,18 @@ body {
 /*QUESTIONS*/
 a {
     height: 18px;
-    width: 21.875rem;
     text-decoration: none;
     color: var(--basicgrey);
     font-size: 0.875rem;
     line-height: 1.085rem;
+    display: block;
+    width: 100%;
+}
+
+
+.question {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
 a:hover {
@@ -112,19 +107,17 @@ a:active {
     color: var(--basicgrey);
 }
 
-a::after {
-    content: url(../images/tobottom.svg);
-    rotate:calc(180) ;
-}
-
-a:focus::after {
-    content: url(../images/totop.svg);
-}
 
 /*ANSWERS*/
 
 
 p.answers {
     font-size: 0.875rem;
+}
+
+.answer {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
 }
 

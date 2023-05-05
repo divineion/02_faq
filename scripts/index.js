@@ -1,12 +1,11 @@
 const sections = document.getElementsByClassName('section');
 const reponse = document.getElementsByClassName("answer");
-const arrow = document.getElementsByTagName('a:after');
 
         //LE BLOC DE CODE QUI T'INTERESSE
 for (let i=0;i<sections.length;i++) {
                 sections[i].addEventListener('click', function() {
                         const answer = sections[i].lastElementChild;
-                        answer.classList.toggle('open'); 
+                        answer.classList.toggle('open');
                 })
   };
 
