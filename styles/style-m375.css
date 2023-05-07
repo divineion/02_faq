@@ -3,6 +3,7 @@
     height: 100svh;
     box-sizing: border-box;
     padding: 148px 24px 85px 1.5rem;
+    align-items: flex-start;
 }
 
 #box {
@@ -10,10 +11,7 @@
 }
 
 #visu {
-    position: absolute;
-    top: -3.1rem;
-    width: 14.8125rem;
-    height: 11.25rem;
+width: 74%;
 }
 
 .section {
@@ -31,16 +29,20 @@ h1 {
 
 #component {
     margin: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+    height: fit-content;
+    display: block;
+    margin-top: 124px;
     box-sizing: border-box;
     padding: 8.25rem 1.5rem 3rem 1.5rem;
 }
 
 #component-left-side {
-    width: 100%;
+    position: absolute;
+    left: 8%;
+    top: -35%;
+}
+
+#faq {
     height: auto;
 }
 
@@ -52,10 +54,6 @@ h1 {
 
 #component-right-side p {
     width: 100%;
-    margin: 0;
-}
-
-#image {
     margin: 0;
 }
 
