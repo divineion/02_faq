@@ -2,7 +2,9 @@
     width: 100svw;
     height: 100svh;
     box-sizing: border-box;
-    padding: 148px 24px 85px 1.5rem;
+    padding: 19.27% 6.4% 0 6.4%;
+    display: flex;
+    align-items: flex-end;
 }
 
 #box {
@@ -12,8 +14,8 @@
 #visu {
     position: absolute;
     top: -3.1rem;
-    width: 14.8125rem;
-    height: 11.25rem;
+    width: 64%;
+    height: auto;
 }
 
 .section {
@@ -36,7 +38,8 @@ h1 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 8.25rem 1.5rem 3rem 1.5rem;
+    padding: 24.67% 6.4% 8.9% 6.4%;
+
 }
 
 #component-left-side {
@@ -57,6 +60,8 @@ h1 {
 
 #image {
     margin: 0;
+    width: 64%;
+    height: auto;
 }
 
 
