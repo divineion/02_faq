@@ -1,3 +1,17 @@
+:root {
+    font-size: 100%;
+    --basicgrey : #4b4c5F;
+    --activeblack: #1E1F36;
+    --hoverpink: #F47B56;
+    --backwhite: #FFFFFF;
+    --bordergrey: #e8e8ea;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
 #view {
     width: 100svw;
     box-sizing: border-box;
@@ -21,9 +35,9 @@
     height: 80%;
 }
 
-#component {
-    align-items: center;
-    width: 90%;
+#component-right-side {
+
+    background-image: none;
 }
 
 

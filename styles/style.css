@@ -27,31 +27,7 @@ body {
     box-sizing: border-box;
 }
 
-
-
- /* .schatten {
-    width: 200px;
-    position: absolute;
-    filter: saturate(100%);
-    fill: red;
-    z-index: 5;
-    top: 21%;
-    left: -2%;
-    width: 600px;
-} */
-
-.schatten img {
-    width: 100%;
-    height: auto;
-}
-   /* stroke: red;
-    top: 14%;
-    left: 15%;
-} */
-
-
 #visu {
-
     position: absolute;
     top: 28%;
     left: auto;
@@ -65,19 +41,14 @@ body {
     z-index: 3;
 }
 
-#image>img:last-of-type(2) {
-    width: 24%;
-    height: auto
-
-}
-
 #component-right-side {
-    background-image: url(/images/schatten.svg);
+    background-image: url(C:/Users/Acs/Documents/JS/02_faq/images/schatten.svg);
+    /*l'insertion de /images/schatten.svg --> ERR.*/
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: contain;
     background-position-x: -8%;
-    background-color: var(--backwhite);
+    background-color: var(--backwhite); 
     padding: 65px 95px 83px 95px;
     border-radius: 23px;
     width: 64%;
@@ -85,9 +56,8 @@ body {
     display: flex;
     justify-content: flex-end;
     position: relative;
-
-
 }
+
 #faq {
     width: 47.9%;
     display: flex;
@@ -104,23 +74,20 @@ body {
     height: auto;
 }
 
-
-
 /*CLASSLISTS*/
 /*section*/
-
-
-/*answer*/
-.answer {
-    display: none;
-}
-
 .answer.open {
     display: initial;
 }
 
-.tobottom {
-    content: url(../images/tobottom.svg);
+img.open {
+    transform: rotate(180deg);
+}
+
+/*answer*/
+
+.answer {
+    display: none;
 }
 
 /*QUESTIONS*/
@@ -134,10 +101,10 @@ a {
     width: 100%;
 }
 
-
 .question {
     display: flex;
     width: 100%;
+    word-wrap: break-word;
 }
 
 a:hover {
@@ -153,10 +120,7 @@ a:active {
     color: var(--basicgrey);
 }
 
-
 /*ANSWERS*/
-
-
 p.answers {
     font-size: 0.875rem;
 }
@@ -166,6 +130,3 @@ p.answers {
     height: auto;
     word-wrap: break-word;
 }
-
-
-
