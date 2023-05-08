@@ -27,30 +27,44 @@ body {
     box-sizing: border-box;
 }
 
-#component {
-    width: 64%;
-    height: auto;
-    background-color: var(--backwhite);
-    border-radius: 23px;
-    display: flex;
-    justify-content: space-between;
-    gap: 9.4%;
-    padding: 7% 10% 8.7% 0;
-    box-sizing: content-box;
-    position: relative;
-}
 
-#image>img {
+
+ /* .schatten {
+    width: 200px;
     position: absolute;
-    left: -94px;
-    top: 206px;
-}
+    filter: saturate(100%);
+    fill: red;
+    z-index: 5;
+    top: 21%;
+    left: -2%;
+    width: 600px;
+} */
 
-
-#visu {
+.schatten img {
     width: 100%;
     height: auto;
 }
+   /* stroke: red;
+    top: 14%;
+    left: 15%;
+} */
+
+
+#visu {
+
+    position: absolute;
+    top: 28%;
+    left: auto;
+    z-index: 2;
+}
+
+#box {
+    position: absolute;
+    top: 40%;
+    left: 6.5%;
+    z-index: 3;
+}
+
 #image>img:last-of-type(2) {
     width: 24%;
     height: auto
@@ -58,21 +72,34 @@ body {
 }
 
 #component-right-side {
-    width: 42%;
-    height: auto;
-}
+    background-image: url(/images/schatten.svg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: contain;
+    background-position-x: -8%;
+    background-color: var(--backwhite);
+    padding: 65px 95px 83px 95px;
+    border-radius: 23px;
+    width: 64%;
+    height: 60.27%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 
-#component-left-side {
-    width: auto;
-    height: auto;
+
+}
+#faq {
+    width: 47.9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .section {
     border-bottom: solid 1px var(--bordergrey);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 16px 0 16px 0;
     box-sizing: border-box;
     height: auto;
 }
@@ -139,4 +166,6 @@ p.answers {
     height: auto;
     word-wrap: break-word;
 }
+
+
 

@@ -1,6 +1,5 @@
 #view {
-    padding: 1.5rem; /*à modifier*/
-    width: 100%;
+    width: 100svw;
     box-sizing: border-box;
 }
 
@@ -9,17 +8,20 @@
 }
 
 #visu {
-    width: 100%;
+    width: 60%;
     height: auto;
-    margin: 0;
 }
 
+#faq {
+    width: 60%;
+    justify-content: space-between;
+}
 
-
-/*A MODIFIER POSITIONNEMENT*/
+.section {
+    height: 80%;
+}
 
 #component {
-    margin: 0;
     align-items: center;
     width: 90%;
 }

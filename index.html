@@ -10,24 +10,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/style-m375.css" media="(max-width:375px)">
-        <link rel="stylesheet" href="styles/style-m560.css" media="(min-width:376px) and (max-width:760px)">
-        <link rel="stylesheet" href="styles/style-m960.css" media="(min-width:761px) and (max-width:960px)">
+        <link rel="stylesheet" href="styles/style-m960.css" media="(min-width:376px) and (max-width:960px)">
         <script src="scripts/index.js" defer ></script>
     </head>
     <body>
         <div id="view">
-            <div id="component">
-                <div id="component-left-side">
-                    <p id="image"> <!-- voir appellation autre-->
-                        <picture id="visu">
-                            <source srcset="images\mention_isometric-mobile.svg " media="(max-width:960px)">
-                            <img id="visu" src="images/mention_isometric2.svg" width="388px" height="359px">
-                        </picture>
-                        <img id="box" src="images/box.svg" alt="">
-                    </p>
-                </div>
+            <div id="image"> <!-- voir appellation autre-->
+                <picture id="visu">
+                    <source srcset="images\mention_isometric-mobile.svg 236w" media="(max-width:375px), (max-width:960px)" sizes="(max-width:375px) 236px, (max-width:960px) 236px">
+                    <img id="visu" src="images/mention_isometric2.svg" width="388px" height="359px">
+                </picture>
+                <img id="box" src="images/box.svg" alt="">
+            </div>
+            
+
                 <div id="component-right-side">
-                    </p>
                     <div id="faq">
                         <h1>FAQ</h1> 
                         <div class="section">
@@ -52,10 +49,9 @@
                     
                     <div class="section">
                         <div class="question" id="q3"><a href="#">Do you provide additional support?</a><img alt="" src="images/tobottom.svg"></div>
-                        <p id="a5" class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
+                        <p id="a5" class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
-            </div>
         </div>
     </body>
 </html>

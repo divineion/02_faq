@@ -4,7 +4,9 @@
     box-sizing: border-box;
     padding: 19.27% 6.4% 0 6.4%;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #box {
@@ -13,9 +15,11 @@
 
 #visu {
     position: absolute;
-    top: -3.1rem;
-    width: 64%;
+    top: -2.4%;
     height: auto;
+    width: 90%;
+    left: 2%;
+
 }
 
 .section {
@@ -31,26 +35,25 @@ h1 {
     margin-top: 0;
 }
 
-#component {
+#component-right-side {
     margin: 0;
+    height: 90%;
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+    background-image: none;
+
+    display: block;
     box-sizing: border-box;
     padding: 24.67% 6.4% 8.9% 6.4%;
 
 }
 
-#component-left-side {
+#faq {
     width: 100%;
-    height: auto;
+    height: 90%;
 }
 
-
-#component-right-side {
-    width: 100%;
-    padding: 0;
+.schatten {
+    display: none;
 }
 
 #component-right-side p {
