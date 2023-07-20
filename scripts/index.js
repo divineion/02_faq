@@ -5,7 +5,6 @@ for (let i=0;i<sections.length;i++) {
                         answer.classList.toggle('open');
                         const img = answer.previousElementSibling.lastElementChild;   
                         img.classList.toggle('open');       
-             
                 })
   };
 
